@@ -28,11 +28,12 @@ class Events(models.Model):
     to_date=models.DateTimeField()
     image=models.ImageField(upload_to='uploads/',blank=True,null=True)
     date_added=models.DateTimeField(auto_now_add=True)
-    level=[
+    Level=[
         ('Beginner','Beginner'),
         ('Intermediate','Intermediate'),
         ('Advanced','Advanced')
     ]
+    level = models.CharField(max_length=25, choices=Level)
 
         
     class Meta:
