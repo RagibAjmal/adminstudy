@@ -5,7 +5,7 @@ name: CI to Docker Hub
 # Controls when the workflow will run
 on:
   push:
-    branches: [ master ]
+    branches: [ test ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -46,7 +46,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags:  ${{ secrets.DOCKER_HUB_USERNAME }}/backend:1.2
+          tags:  ${{ secrets.DOCKER_HUB_USERNAME }}/backend:1.4
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
 
