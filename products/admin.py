@@ -3,7 +3,7 @@ from django.contrib.admin.decorators import register
 
 # Register your models here.
 
-from .models import Category,Products
+from .models import Organizer,Events
 
-admin.site.register(Category)
-admin.site.register(Products)
+admin.site.register(Organizer)
+admin.site.register(Events)
