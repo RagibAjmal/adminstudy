@@ -46,7 +46,11 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
+<<<<<<< HEAD
           tags:  ${{ secrets.DOCKER_HUB_USERNAME }}/backend:1.4
+=======
+          tags:  ${{ secrets.DOCKER_HUB_USERNAME }}/backend:1.3
+>>>>>>> ddd52d359eb2e3ce12f573b18ad90322759911db
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
 
