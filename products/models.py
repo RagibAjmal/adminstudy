@@ -29,9 +29,9 @@ class Events(models.Model):
     image=models.ImageField(upload_to='uploads/',blank=True,null=True)
     date_added=models.DateTimeField(auto_now_add=True)
     level=[
-        (Beginner,"Beginner"),
-        (Intermediate,"Intermediate"),
-        (Advanced,"Advanced")
+        ('Beginner','Beginner'),
+        ('Intermediate','Intermediate'),
+        ('Advanced','Advanced')
     ]
 
         
